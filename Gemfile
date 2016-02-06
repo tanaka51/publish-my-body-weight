@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'capybara'
 gem 'coffee-rails', '~> 4.1.0'
-gem 'dotenv'
+gem 'dotenv-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'pg', '~> 0.15'
