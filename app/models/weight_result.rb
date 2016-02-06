@@ -49,6 +49,8 @@ class WeightResult < ActiveRecord::Base
 
     if new_name.size <= 20
       client.update_profile(name: new_name)
+
+      logger.info 'update profile'
     end
 
     client.update(<<-TWEET.strip_heredoc)
@@ -56,6 +58,8 @@ class WeightResult < ActiveRecord::Base
       body fat percentage: #{body_fat_percentage}%
       BMI: #{bmi}
     TWEET
+
+    logger.info 'tweet wight, body fat percentage and MBI'
   end
 
   private
