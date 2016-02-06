@@ -38,7 +38,7 @@ class WeightResult < ActiveRecord::Base
   def publish!
     client = twitter_client
     name = client.user.name
-    regexp = /\[.*\]/
+    regexp = /\(.*\)/
 
     info = "(#{weight})"
     new_name = if name.match(regexp)
