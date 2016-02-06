@@ -7,7 +7,7 @@ Dotenv.load
 require 'capybara/poltergeist'
 
 Capybara.register_driver :poltergeist do |app|
-    Capybara::Poltergeist::Driver.new(app, inspector: true)
+  Capybara::Poltergeist::Driver.new(app, inspector: true)
 end
 
 Capybara.current_driver = Capybara.javascript_driver = :poltergeist
