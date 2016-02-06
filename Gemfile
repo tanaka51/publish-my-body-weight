@@ -9,6 +9,7 @@ gem 'pg', '~> 0.15'
 gem 'poltergeist'
 gem 'rails', '4.2.5.1'
 gem 'sass-rails', '~> 5.0'
+gem 'twitter'
 gem 'uglifier', '>= 1.3.0'
 
 group :development do
