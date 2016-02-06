@@ -28,7 +28,7 @@ class WeightResult < ActiveRecord::Base
     end
 
     _last = last
-    if _last.weight == weight && _last.body_fat_percentage == bfp && _last.bmi == bmi
+    if _last && _last.weight == weight && _last.body_fat_percentage == bfp && _last.bmi == bmi
       return _last
     end
 
