@@ -17,3 +17,7 @@ group :development do
   gem 'pry-rails', group: :test
   gem 'web-console', '~> 2.0'
 end
+
+group :production do
+  gem 'rails_12factor'
+end
