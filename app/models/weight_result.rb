@@ -21,7 +21,7 @@ class WeightResult < ActiveRecord::Base
 
     sleep 2
 
-    weight, bfp, bmi = s.within_frame(s.all('.gadgetFrame').last) do
+    weight, bmi, bfp = s.within_frame(s.all('.gadgetFrame').last) do
       s.within('#vitals') do
         s.all('td.value').map{|e| e.all('span').first.text }
       end
